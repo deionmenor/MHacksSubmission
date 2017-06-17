@@ -1,0 +1,24 @@
+#emergency{
+  width: 100%;
+  height:50vh;
+
+  background-color: orange;
+
+}
+#emergency:hover{
+  background-color: blue;
+}
+#advice{
+  background-color: blue,
+  height: 3em;
+}
+#stress{
+  background-color: yellow,
+  height: 3em;
+}
+#calm{
+  width: 50%;
+  height: 200px;
+  background-color: #00FF00;
+
+}
