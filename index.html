@@ -13,16 +13,66 @@
 
     <!-- Theme CSS -->
     <link href="css/myStyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </head>
 
 <body>
 
-<div id="emergency" class="panel">
-  <h1>EMERGENCY</h1>
+
+
+  <script type="text/javascript">
+		var clock;
+
+		$(document).ready(function() {
+
+			clock = $('.clock').FlipClock(10, {
+		        clockFace: 'Counter',
+
+		        autoStart: false,
+		        callbacks: {
+		        	start: function() {
+		        		$('.message').html('The clock has started!');
+		        	}
+		        }
+		    });
+
+        $('.start').click(function(e) {
+
+		    	clock.start();
+          setTimeout(function() {
+        		setInterval(function() {
+        			clock.decrement();
+        		}, 1500);
+		    });
+
+
+      	});
+
+
+
+		});
+	</script>
+
+
+
+
+
+
+
+<div   id="emergency" class="panel">
+  <div class="clock"></div>
+  <button class="start">Start Clock</button>
+  <div class="message"></div>
+  <h1 >EMERGENCY</h1>
 </div>
 
 <div class="row">
   <div id="advice" class="panel">
+
     <h1>ADVICE</h1>
   </div>
   <div id ="stress" class="panel">
@@ -34,7 +84,10 @@
 </div>
 
 
-<script src="js/script.js"></script>
+
+
+
+
 
 </body>
 </html>
