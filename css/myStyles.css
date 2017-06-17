@@ -1,4 +1,3 @@
-html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 #emergency{
   width: 100%;
@@ -21,7 +20,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   background-color: blue;
 }
 #stress{
-  
+
   width: 33vw;
   height: 50vh;
   background-color: #66F777;
@@ -38,6 +37,11 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 }
 #calm:hover{
   background-color: blue;
+}
+
+.panel{
+  text-align: center;
+  vertical-align: middle;
 }
 
 .row{
