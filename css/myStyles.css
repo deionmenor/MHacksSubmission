@@ -1,3 +1,5 @@
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+
 #emergency{
   width: 100%;
   height:50vh;
@@ -9,16 +11,39 @@
   background-color: blue;
 }
 #advice{
-  background-color: blue,
-  height: 3em;
+  float: left;
+  width: 33vw;
+  height: 50vh;
+  background-color: #33FF00;
+   display: inline-block;
+}
+#advice:hover{
+  background-color: blue;
 }
 #stress{
-  background-color: yellow,
-  height: 3em;
+  
+  width: 33vw;
+  height: 50vh;
+  background-color: #66F777;
+   display: inline-block;
+}
+#stress:hover{
+  background-color: blue;
 }
 #calm{
-  width: 50%;
-  height: 200px;
-  background-color: #00FF00;
+  width: 33vw;
+  height: 50vh;
+  background-color: #99F400;
+   display: inline-block;
+}
+#calm:hover{
+  background-color: blue;
+}
 
+.row{
+   display: table;
+}
+* {
+margin: 0px;
+padding: 0px;
 }
