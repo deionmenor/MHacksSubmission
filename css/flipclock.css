@@ -11,6 +11,7 @@
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
+
 }
 
 .flip-clock-wrapper a {
@@ -50,7 +51,7 @@
 .flip-clock-wrapper {
   text-align: center;
   position: relative;
-  width: 100%;
+  width: default;
   margin: 1em;
 }
 
@@ -108,7 +109,7 @@
   width: 100%;
   height: 50%;
   font-size: 80px;
-  overflow: hidden; 
+  overflow: hidden;
   outline: 1px solid transparent; }
 
 .flip-clock-wrapper ul li a div .shadow {
@@ -199,7 +200,17 @@
   left: 5px; }
 
 .flip-clock-divider .flip-clock-label {
-  position: absolute;
+  position: absolute;.clock {
+    transform-origin: 0 0;
+    transform: scale(.25);
+    -ms-transform: scale(.25);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(.25);
+    -o-transform-origin: 0 0;
+    -o-transform: scale(.25);
+    -moz-transform-origin: 0 0;
+    -moz-transform: scale(.25);
+}
   top: -1.5em;
   right: -86px;
   color: black;

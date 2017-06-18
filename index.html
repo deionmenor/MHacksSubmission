@@ -29,8 +29,9 @@
 
 		$(document).ready(function() {
 
-			clock = $('.countdown').FlipClock(20, {
+			clock = $('.flip-clock').FlipClock(20, {
 		        clockFace: 'Counter',
+            // zoom: 3;
 
 		        autoStart: false,
 		        callbacks: {
@@ -40,13 +41,13 @@
 		        }
 		    });
 
-        $('.start').click(function(e) {
+        $('#emergency').click(function(e) {
 
 		    	clock.start();
           setTimeout(function() {
         		setInterval(function() {
         			clock.decrement();
-        		}, 100);
+        		}, 3000);
 		    });
 
 
@@ -65,23 +66,31 @@
 
 
 
-<div   id="emergency" class="panel" align="center">
-  <div class="countdown " ></div>
-  <button class="start">Start Clock</button>
-  <div class="message"></div>
-  <h1 >EMERGENCY</h1>
+<div   id="emergency" class="panel" >
+
+  <!-- //container for the clock countdown -->
+  <div class="container" >
+      <div class="flip-clock"  ></div>
+  </div>
+
+
+  <h1>EMERGENCY</h1>
+  <p class="panel-text">Are you stressed? Feeling angry? It sometimes helps to just chill for a bit and count down. <br /> When you're ready, click this box to start the countdown timer. </p>
 </div>
 
 <div class="row">
   <div id="advice" class="panel">
 
     <h1>ADVICE</h1>
+    <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
   </div>
   <div id ="stress" class="panel">
     <h1>STRESS</h1>
+      <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
   </div>
   <div id="calm" class="panel">
     <h1>CALM</h1>
+      <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
   </div>
 </div>
 

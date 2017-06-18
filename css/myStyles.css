@@ -39,9 +39,6 @@
   background-color: blue;
 }
 
-.yum{
-  margin-left: 4em;
-}
 
 
 
@@ -57,3 +54,17 @@
 margin: 0px;
 padding: 0px;
 }
+
+.container {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10%;
+}
+
+.flip-clock {
+    display: inline-block;
+    width: auto;
+}
+
+.panel-text { display: none; }
+.panel:hover .panel-text { display: block; }
