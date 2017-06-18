@@ -42,6 +42,13 @@
           var url = urls[Math.floor(Math.random()*urls.length)];
           window.location = url; // redirect
       }
+
+      // var advice =  document.getElementById('advice');
+      // advice.onclick = function(){
+      //   var url = urls[Math.floor(Math.random()*urls.length)];
+      //   window.location = url;
+      //   background-color:BLACK;
+      // };
   </script>
 
   <script type="text/javascript">
@@ -103,11 +110,11 @@
 </div>
 
 <div class="row">
-  <div onselectstart="return false" id="advice" class="panel">
+  <div onselectstart="return false" onclick="goSomewhere();" id="advice" class="panel">
 
     <h1>advice</h1>
     <p class="panel-text">Click this panel to view some curated </br>resources on how to deal with stress and anger</p>
-      <a href="#" style="display:block; height:20em; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
+      <!-- <a href="#" style="display:block; height:20em; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a> -->
   </div>
   <div onselectstart="return false" id ="journal" class="panel">
     <h1>journal</h1>
@@ -171,6 +178,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    goSomewhere();
 }
 
 // When the user clicks on <span> (x), close the modal
