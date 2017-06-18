@@ -11,6 +11,10 @@ p{
   font-size: 2em;
 }
 
+body{
+  height: 600px;
+}
+
 
 #input {
     display: block;
@@ -24,7 +28,7 @@ p{
 }
 #emergency{
   width: 100%;
-  height:50vh;
+  height:45vh;
 
   background-color: #049EE0;
 
@@ -75,6 +79,7 @@ float: left;
 .row{
    display: table;
    width: 100%;
+   height: 10%;
 }
 * {
 margin: 0px;
@@ -84,7 +89,7 @@ padding: 0px;
 .container {
     text-align: center;
     vertical-align: middle;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .flip-clock {
