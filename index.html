@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Anger Management Hack</title>
+    <title>StressBoard - Anger Management Dashboard</title>
 
     <!-- Theme CSS -->
     <link href="css/myStyles.css" rel="stylesheet">
@@ -50,7 +50,7 @@
 
 		$(document).ready(function() {
 
-			clock = $('.flip-clock').FlipClock(20, {
+			clock = $('.flip-clock').FlipClock(10, {
 		        clockFace: 'Counter',
             // zoom: 3;
 
@@ -91,7 +91,7 @@
 </div>
 
 
-<div   id="emergency" class="panel" >
+<div  onselectstart="return false" id="emergency" class="panel" >
 
   <!-- //container for the clock countdown -->
   <div class="container" >
@@ -104,25 +104,25 @@
 </div>
 
 <div class="row">
-  <div id="advice" class="panel">
+  <div onselectstart="return false" id="advice" class="panel">
 
     <h1>advice</h1>
     <p class="panel-text">Click this panel to view some curated </br>resources on how to deal with stress and anger</p>
-      <a href="#" style="display:block; height:30vh; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
+      <a href="#" style="display:block; height:20em; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
   </div>
-  <div id ="journal" class="panel">
+  <div onselectstart="return false" id ="journal" class="panel">
     <h1>journal</h1>
-      <p class="panel-text">Click this panel to open up your diary. </br> It helps to put what you're feeling into words</p>
+      <p class="panel-text">Click this panel to open up your journa. </br> It helps to put what you're feeling into words</p>
   </div>
-  <div id="calm" class="panel">
-    <h1>calm</h1>
-      <p class="panel-text">Under Construction</p>
+  <div onselectstart="return false" id="calm" class="panel">
+    <h1>About</h1>
+      <p class="panel-text">StressBoard is your quick easy-to-use dashboard tool for anger management and stress control</p>
   </div>
 </div>
 
-<!-- <div style="text-align: center;background-color: #FFFF61">
-<h1 style="font-family:'Chewy',cursive;">StressBoard</h1>
-</div> -->
+<div id="bookmark" style="height: 30%;text-align: center;background-color: #FFFF61">
+<h1 style="font-family:'Chewy',cursive;"><a id="bookmark-this" href="#" title="Bookmark This Page">Bookmark This Page</a></h1>
+</div>
 
 
 
@@ -139,7 +139,7 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Diary</h2>
+      <h2>Journal</h2>
     </div>
     <div class="modal-body">
 
