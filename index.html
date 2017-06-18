@@ -88,23 +88,23 @@
   </div>
 
 
-  <h1>EMERGENCY</h1>
+  <h1>countdown</h1>
   <p class="panel-text">Are you stressed? Feeling angry? It sometimes helps to just chill for a bit and count down. <br /> When you're ready, click this box to start the countdown timer. </p>
 </div>
 
 <div class="row">
   <div id="advice" class="panel">
 
-    <h1>ADVICE</h1>
-    <p class="panel-text">Under Construction</p>
+    <h1>advice</h1>
+    <p class="panel-text">Click this panel to view some curated resources on how to deal with stress and anger</p>
     <a href="#" style="display:block; height:100%; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
   </div>
-  <div id ="stress" class="panel">
-    <h1>STRESS</h1>
-      <p class="panel-text">Under Construction</p>
+  <div id ="journal" class="panel">
+    <h1>journal</h1>
+      <p class="panel-text">Click this panel to open up your diary. </br> It helps to put what you're feeling into words</p>
   </div>
   <div id="calm" class="panel">
-    <h1>CALM</h1>
+    <h1>calm</h1>
       <p class="panel-text">Under Construction</p>
   </div>
 </div>
@@ -124,14 +124,15 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Modal Header</h2>
+      <h2>Diary</h2>
     </div>
     <div class="modal-body">
-       <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+       <textarea id="input"placeholder="I am stressed or angry because..."></textarea>
     </div>
-    <!-- <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div> -->
+    <div class="modal-footer">
+      <button id="submit">Submit</button>
+    </div>
   </div>
 
 </div>
@@ -141,10 +142,12 @@
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("stress");
+var btn = document.getElementById("journal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+var submit = document.getElementById("submit");
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
@@ -153,6 +156,11 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+submit.onclick = function() {
     modal.style.display = "none";
 }
 
