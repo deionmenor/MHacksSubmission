@@ -18,11 +18,25 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/flipclock.min.js"></script>
     <!-- <script src="js/script.js"></script> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Patrick+Hand+SC" rel="stylesheet">
 </head>
 
 <body>
 
 
+  <script type="text/javascript">
+      var urls = [
+          "http://www.kittenwar.com/",
+          'http://heeeeeeeey.com/',
+          'http://cat-bounce.com/'
+      ];
+
+      function goSomewhere() {
+          var url = urls[Math.floor(Math.random()*urls.length)];
+          window.location = url; // redirect
+      }
+  </script>
 
   <script type="text/javascript">
 		var clock;
@@ -82,17 +96,21 @@
   <div id="advice" class="panel">
 
     <h1>ADVICE</h1>
-    <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
+    <p class="panel-text"></p>
+    <a href="#" style="display:block; height:100%; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
   </div>
   <div id ="stress" class="panel">
     <h1>STRESS</h1>
-      <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
+      <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger
+
+    </p>
   </div>
   <div id="calm" class="panel">
     <h1>CALM</h1>
       <p class="panel-text">Read up on tips and tricks in how to deal with stress and anger</p>
   </div>
 </div>
+
 
 
 

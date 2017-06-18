@@ -51,8 +51,8 @@
 .flip-clock-wrapper {
   text-align: center;
   position: relative;
-  width: default;
-  margin: 1em;
+  width: default ;
+  margin: 2em;
 }
 
 .flip-clock-wrapper:before,
