@@ -42,7 +42,7 @@ a {
 }
 #advice{
   float: left;
-  width: 33vw;
+  width: 31vw;
   height: 50vh;
   background-color: #0A48E3;
    display: inline-block;
@@ -53,7 +53,7 @@ a {
 #journal{
 
 float: left;
-  width: 33vw;
+  width: 31vw;
   height: 50vh;
   background-color: #2A50AE;
    display: inline-block;
