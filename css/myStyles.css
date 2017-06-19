@@ -96,8 +96,11 @@ padding: 0px;
 
 .container {
     text-align: center;
-    vertical-align: middle;
+    display: flex;
    
+}
+.container > div {
+  flex: 1; /*grow*/
 }
 
 .flip-clock {
