@@ -97,7 +97,7 @@ padding: 0px;
 .container {
     text-align: center;
     vertical-align: middle;
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 .flip-clock {
@@ -105,7 +105,7 @@ padding: 0px;
     width: auto;
 }
 
-.panel-text { display: none; margin-top: 3em;}
+.panel-text { display: none; margin-top: 1em;}
 .panel:hover .panel-text { display: block; }
 .panel-text1 { display: none;}
 .panel:hover .panel-text1 { display: block; }
