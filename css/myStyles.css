@@ -99,9 +99,9 @@ padding: 0px;
     display: flex;
    
 }
-.container > div {
+/* .container > div {
   flex: 1; /*grow*/
-}
+} */
 
 .flip-clock {
     display: inline-block;
