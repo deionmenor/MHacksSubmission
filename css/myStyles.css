@@ -37,40 +37,43 @@ a {
 
 }
 #emergency:hover{
-  background-color: #00E48E;
+  background-color: #38c3ff;
 }
 #advice{
   float: left;
-  width: 33vw;
+   position:relative;
+  width: 33.3%;
   height: 40vh;
-  background-color: #0A48E3;
+  background-color: #3c82d8;
    display: inline-block;
 }
 #advice:hover{
-  background-color:#00E48E;
+  background-color:#63a9ff;
 }
 #journal{
 
 float: left;
-width: 33vw;
+position:relative;
+width: 33.3%;
 height: 40vh;
 
-  background-color: #2A50AE;
+  background-color: #51ffed;
    display: inline-block;
 }
 #journal:hover{
-  background-color: #00E48E;
+  background-color:#a4fcf3 ;
 }
 #calm{
   float: left;
-  width: 33vw;
+  position:relative;
+  width: 33.3%;
   height: 40vh;
 
-  background-color: #68D1FF;
+  background-color: #00E48E ;
    display: inline-block;
 }
 #calm:hover{
-  background-color: #00E48E;
+  background-color: #31eda6;
 }
 
 #bookmark:hover{
@@ -116,8 +119,8 @@ padding: 0px;
 
 .panel-text { display: none; margin-top: 1em;}
 .panel:hover .panel-text { display: block; }
-.panel-text1 { display: none;}
-.panel:hover .panel-text1 { display: block; }
+/*.panel-text1 { display: none;}
+.panel:hover .panel-text1 { display: block; }*/
 
 /* The Modal (background) */
 .modal {
