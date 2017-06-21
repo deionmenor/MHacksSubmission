@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Anger Management Hack</title>
+    <title>StressBoard - Anger Management Dashboard</title>
 
     <!-- Theme CSS -->
     <link href="css/myStyles.css" rel="stylesheet">
@@ -32,10 +32,9 @@
           'https://www.mindtools.com/pages/article/newTCS_97.htm',
           'https://www.helpguide.org/articles/relationships-communication/anger-management.htm',
           'https://www.reddit.com/r/Anger/comments/24gi86/some_things_to_remember_about_anger/',
-          '',
-          '',
-          '',
-          '',
+          'http://enoughisenoughau.blogspot.com/2011/04/anger-management-and-violent-behaviour.html',
+          'https://www.reddit.com/r/LifeProTips/comments/61vu5x/lpt_stress_management_lessons_learned_from_a_usaf/',
+          'https://hbr.org/2014/11/how-to-handle-stress-in-the-moment',
           'http://www.apa.org/topics/anger/control.aspx'
       ];
 
@@ -43,6 +42,13 @@
           var url = urls[Math.floor(Math.random()*urls.length)];
           window.location = url; // redirect
       }
+
+      // var advice =  document.getElementById('advice');
+      // advice.onclick = function(){
+      //   var url = urls[Math.floor(Math.random()*urls.length)];
+      //   window.location = url;
+      //   background-color:BLACK;
+      // };
   </script>
 
   <script type="text/javascript">
@@ -50,7 +56,7 @@
 
 		$(document).ready(function() {
 
-			clock = $('.flip-clock').FlipClock(20, {
+			clock = $('.flip-clock').FlipClock(10, {
 		        clockFace: 'Counter',
             // zoom: 3;
 
@@ -91,7 +97,7 @@
 </div>
 
 
-<div   id="emergency" class="panel" >
+<div  onselectstart="return false" id="emergency" class="panel" >
 
   <!-- //container for the clock countdown -->
   <div class="container" >
@@ -100,29 +106,29 @@
 
 
   <h1>countdown</h1>
-  <p class="panel-text">Are you stressed? Feeling angry? It sometimes helps to just chill for a bit and count down. <br /> When you're ready, click this box to start the countdown timer. </p>
+  <p class="panel-text1">Are you stressed? Feeling angry? It sometimes helps to just chill for a bit and count down. <br /> When you're ready, click this box to start the countdown timer. </p>
 </div>
 
 <div class="row">
-  <div id="advice" class="panel">
+  <div onselectstart="return false" onclick="goSomewhere();" id="advice" class="panel">
 
     <h1>advice</h1>
     <p class="panel-text">Click this panel to view some curated </br>resources on how to deal with stress and anger</p>
-      <a href="#" style="display:block; height:30vh; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a>
+      <!-- <a href="#" style="display:block; height:20em; width:100%; cursor: pointer" onClick="goSomewhere(); return false;"></a> -->
   </div>
-  <div id ="journal" class="panel">
+  <div onselectstart="return false" id ="journal" class="panel">
     <h1>journal</h1>
-      <p class="panel-text">Click this panel to open up your diary. </br> It helps to put what you're feeling into words</p>
+      <p class="panel-text">Click this panel to open up your journal. </br> It helps to put what you're feeling into words</p>
   </div>
-  <div id="calm" class="panel">
-    <h1>calm</h1>
-      <p class="panel-text">Under Construction</p>
+  <div onselectstart="return false" id="calm" class="panel">
+    <h1>About</h1>
+      <p class="panel-text">StressBoard is your quick easy-to-use dashboard tool for anger management and stress control</p>
   </div>
 </div>
 
-<!-- <div style="text-align: center;background-color: #FFFF61">
-<h1 style="font-family:'Chewy',cursive;">StressBoard</h1>
-</div> -->
+<div id="bookmark" style="height: 30%;text-align: center;background-color: #FFFF61">
+<h1 style="font-family:'Chewy',cursive;"><a id="bookmark-this" href="#" title="Bookmark This Page">Bookmark This Page</a></h1>
+</div>
 
 
 
@@ -139,7 +145,7 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Diary</h2>
+      <h2>Journal</h2>
     </div>
     <div class="modal-body">
 
@@ -172,6 +178,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    goSomewhere();
 }
 
 // When the user clicks on <span> (x), close the modal
